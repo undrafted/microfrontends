@@ -12,6 +12,14 @@ module.exports = {
       exposes: {
         "./ProductsIndex": "./src/index",
       },
+      shared: {
+        faker: {
+          // should load only 1 copy
+          // if theres a version mismatch with other MFEs,
+          // just throw a warning
+          singleton: true,
+        },
+      },
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
