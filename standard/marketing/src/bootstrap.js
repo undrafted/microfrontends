@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./components/App";
 
 const mount = (el) => {
-  ReactDOM.render(<h1>Hi there from Marketing!</h1>, el);
+  ReactDOM.render(<App />, el);
 };
 
 // for development in isolation
