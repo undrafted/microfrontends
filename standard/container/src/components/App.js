@@ -1,5 +1,10 @@
 import React from "react";
+import MarketingApp from "./MarketingApp";
 
-const App = () => <h1>Hi there</h1>;
+const App = () => (
+  <div>
+    <MarketingApp />
+  </div>
+);
 
 export default App;
