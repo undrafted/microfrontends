@@ -13,6 +13,7 @@ const AuthApp = () => {
           history.push(nextPathname);
         }
       },
+      initialPath: history.location.pathname,
     });
 
     history.listen(onHostNavigate);
