@@ -21,6 +21,7 @@ const devConfig = {
       remotes: {
         marketing: "marketing@http://localhost:8081/remoteEntry.js",
         auth: "auth@http://localhost:8082/remoteEntry.js",
+        dashboard: "dashboard@http://localhost:8083/remoteEntry.js",
       },
       // this is a shortcut
       // up to your discretion to use this solution
