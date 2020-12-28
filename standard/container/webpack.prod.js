@@ -18,6 +18,7 @@ const prodConfig = {
       name: "container",
       remotes: {
         marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
+        auth: `auth@${domain}/auth/latest/remoteEntry.js`,
       },
       // this is a shortcut
       // up to your discretion to use this solution

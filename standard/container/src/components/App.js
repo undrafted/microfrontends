@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import {
   StylesProvider,
   createGenerateClassName,
@@ -7,6 +7,7 @@ import {
 
 import Header from "./Header";
 import MarketingApp from "./MarketingApp";
+import AuthApp from "./AuthApp";
 
 const generateClassName = createGenerateClassName({
   productionPrefix: "co",
@@ -17,6 +18,10 @@ const App = () => (
     <BrowserRouter>
       <div>
         <Header />
+        <Switch>
+          <Route path="/auth" component={AuthApp} />
+          <Route path="/" component={MarketingApp} />
+        </Switch>
         <MarketingApp />
       </div>
     </BrowserRouter>
