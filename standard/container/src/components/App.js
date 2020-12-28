@@ -6,7 +6,7 @@ import {
 } from "@material-ui/core/styles";
 
 import Header from "./Header";
-
+import ProgressBar from "./ProgressBar";
 const MarketingLazy = lazy(() => import("./MarketingApp"));
 const AuthLazy = lazy(() => import("./AuthApp"));
 
@@ -19,7 +19,7 @@ const App = () => (
     <BrowserRouter>
       <div>
         <Header />
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<ProgressBar />}>
           <Switch>
             <Route path="/auth" component={AuthLazy} />
             <Route path="/" component={MarketingLazy} />
